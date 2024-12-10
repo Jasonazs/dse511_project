@@ -30,7 +30,7 @@ playoff_blk_performance_sorted <- playoff_blk_performance[order(-playoff_blk_per
 top10_BLK$Season <- "Regular"
 playoff_blk_performance_sorted$Season <- "Playoff"
 
-# Combine regular and playoff block data
+
 combined_data3 <- rbind(
   data.frame(Player = top10_BLK$Player, BLK = top10_BLK$BLK, Season = top10_BLK$Season),
   data.frame(Player = playoff_blk_performance_sorted$Player, BLK = playoff_blk_performance_sorted$BLK, Season = playoff_blk_performance_sorted$Season)
